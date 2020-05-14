@@ -1,27 +1,28 @@
 # EpitaAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
+Projet version version Angular CLI 9.1.5.
 
-## Development server
+## Instruction de démarrage JOUR 2
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Cloner le repo en local
 
-## Code scaffolding
+- Ouvrir un terminal et se placer à la racine du dossier de projet
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Lancer la commande `npm install` pour réinstaller le dossier node_modules qui contient les dépendances 
 
-## Build
+- Lancer la commande `ng serve` pour lancer le serveur de développement. Et naviguer sur`http://localhost:4200/`. L'app est prête dans le navigateur et est en live reload
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Les commandes ng que nous allons utiliser pour générer des ressources Angular
+## Component, Service, Pipe, ...
 
-## Running unit tests
+`ng generate component component-name` pour générer un component. 
+`ng generate service service-name` pour générer un service.
+`ng generate pipe pipe-name` pour générer un pipe. 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## La documentation officielle
 
-## Running end-to-end tests
+Voir la [doc Angular](https:/angular.io)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## La documentation du CLI
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Pour en savoir plus sur le CLI, dans le terminal : `ng help`. Ou rendez-vous sur [Angular CLI](https://cli.angular.io/).
