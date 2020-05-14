@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+/*
+  Décorateur de class
+*/
+@NgModule(
+  {
+    declarations: [
+      AppComponent
+    ],
+    imports: [
+      BrowserModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
+  })
+
+/* la class app.module */
 export class AppModule { }
