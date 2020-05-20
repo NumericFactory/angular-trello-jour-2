@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap-reboot.min.css';
+
+body {
+   background: rgb(0,93,214)
+}
+h1 {
+   color: red;
+}
+button {
+   background: white;
+   border:1px solid rgb(240,240,240);
+   padding:3px;
+}
+div.modal {
+   width: 600px;
+   min-height: 300px;
+   background: rgb(255,255,255);
+   position: absolute;
+   top: 100px;
+   left: calc(50% - 300px);
+   z-index:2;
+   padding: 25px;
+   border-radius:7px;
+   border:1px solid #ddd
+}
+div.modal button.close {
+   position: absolute;
+   top:0;
+   right: 0;
+}
+div.backdrop {
+   width: 100%;
+   height: 100%;
+   background:rgba(0,0,0,.4);
+   position: absolute;
+   z-index:1;
+   top:0
+}

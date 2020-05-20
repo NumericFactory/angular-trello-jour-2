@@ -7,7 +7,30 @@
     <!-- LIST NAME-->
     {{ list.name}}
     <!-- CARDS -->
-    <div class="card" *ngFor="let card of list.cards">{{card.title}}</div>
+    <div (click)="openModal(card)" class="card" *ngFor="let card of list.cards">
+
+      <button (click)="removeCard(list, card)">X</button>
+      {{card.title}}
+    </div>
+
+    <hr>
+    <button (click)="addCard(list)">+ Ajouter une carte</button>
+
   </div>
 
+  <div class="list">
+    <button (click)="addList()">+ Ajouter une liste</button>
+  </div>
+</div> <!-- Fin List Container-->
+
+<div *ngIf="isModalOpened" class="modal">
+  <button class="close" (click)="closeModal()">X</button>
+  <!-- COMPONENT <app-card-detail> -->
+
+  <app-card-detail [card]='selectedCard' [theBoard]="board"></app-card-detail>
+
+
 </div>
+
+
+<div *ngIf="isModalOpened" class="backdrop"></div>

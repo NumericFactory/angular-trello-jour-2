@@ -20,6 +20,9 @@ import { Component } from '@angular/core';
 */
 export class AppComponent {
 
+  isModalOpened = false;
+  selectedCard;
+
   board = [
     {
       id: 1,
@@ -122,7 +125,70 @@ export class AppComponent {
   ];
 
 
+  constructor() {
+    console.log(this);
+  }
+
+  /*
+   addCard
+   @param: list object
+  */
+  addCard(list) {
+    console.log(list);
+    let cardName = prompt('Nom de la nouvelle carte ?');
+    if (cardName != null) {
+      if (cardName.trim().length > 0) {
+        // Je crée une nlle carte
+        let card = {
+          id: Date.now(),
+          title: cardName,
+          content: '',
+          priority: 1
+        };
+        // J'ajoute la nlle carte dans la liste
+        list.cards = [card, ...list.cards];
+      }
+    }
+  }
+
+  /*
+    removeCard
+    @param : list object, card object
+  */
+  removeCard(list, card) {
+    // array.splice(index, 1)
+    if (confirm('Voulez-vous supprimer cette carte ? ')) {
+      let index = list.cards.indexOf(card);
+      list.cards.splice(index, 1);
+    }
+  }
+
+  /*
+    addList
+  */
+  addList() {
+    let listName = prompt('Nom de la nouvelle liste ?');
+    let newList = {
+      id: Date.now(),
+      name: listName,
+      cards: []
+    }
+    this.board = [...this.board, newList];
+  }
+
+  /* MODAL */
+
+  openModal(card) {
+    this.selectedCard = card;
+    this.isModalOpened = true;
+  }
+
+  closeModal() {
+    this.isModalOpened = false;
+  }
 
 
 
-} 
+
+
+} // Fin de la class

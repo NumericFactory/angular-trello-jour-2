@@ -1,8 +1,8 @@
-# EpitaAngular
+# EpitaAngular / Jour 3 démarrage
 
 Projet version version Angular CLI 9.1.5.
 
-## Instruction de démarrage JOUR 2
+## Instruction de démarrage JOUR 3
 
 - Cloner le repo en local
 
@@ -11,6 +11,16 @@ Projet version version Angular CLI 9.1.5.
 - Lancer la commande `npm install` pour réinstaller le dossier node_modules qui contient les dépendances 
 
 - Lancer la commande `ng serve` pour lancer le serveur de développement. Et naviguer sur`http://localhost:4200/`. L'app est prête dans le navigateur et est en live reload
+
+
+## Ce que l'on va réaliser
+- Rappels
+- ngStyle et ngClass
+- refacto service
+- refacto component board
+- formulaire RactiveForm
+- request avec HttpClient
+- build et déploiement
 
 ## Les commandes ng que nous allons utiliser pour générer des ressources Angular
 ## Component, Service, Pipe, ...

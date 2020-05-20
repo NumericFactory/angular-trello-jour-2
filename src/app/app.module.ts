@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { CardDetailComponent } from './card-detail/card-detail.component';
 
 /*
   Décorateur de class
@@ -9,7 +10,8 @@ import { AppComponent } from './app.component';
 @NgModule(
   {
     declarations: [
-      AppComponent
+      AppComponent,
+      CardDetailComponent
     ],
     imports: [
       BrowserModule
